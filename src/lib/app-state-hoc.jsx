@@ -22,7 +22,7 @@ const composeEnhancers = window.__REDUX_DEVTOOLS_EXTENSION_COMPOSE__ || compose;
                         only rendering modals, not the GUI.
  * @returns {React.Component} component with redux and intl state provided
  */
-const AppStateHOC = function (WrappedComponent, localesOnly) {
+const AppStateHOC = function (WrappedComponent, localesOnly, sessionReducer, sessionInitlaState) {
     class AppStateWrapper extends React.Component {
         constructor (props) {
             super(props);
@@ -69,11 +69,13 @@ const AppStateHOC = function (WrappedComponent, localesOnly) {
                 reducers = {
                     locales: localesReducer,
                     scratchGui: guiReducer,
-                    scratchPaint: ScratchPaintReducer
+                    scratchPaint: ScratchPaintReducer,
+                    session: sessionReducer
                 };
                 initialState = {
                     locales: initializedLocales,
-                    scratchGui: initializedGui
+                    scratchGui: initializedGui,
+                    session: sessionInitlaState
                 };
                 enhancer = composeEnhancers(guiMiddleware);
             }

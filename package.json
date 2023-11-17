@@ -11,7 +11,7 @@
   },
   "main": "./dist/scratch-gui.js",
   "scripts": {
-    "build": "npm run clean && webpack --colors --bail",
+    "build": "npm run clean && BUILD_MODE=dist webpack --colors --bail",
     "clean": "rimraf ./build && mkdirp build && rimraf ./dist && mkdirp dist",
     "deploy": "touch build/.nojekyll && gh-pages -t -d build -m \"[skip ci] Build for $(git log --pretty=format:%H -n1)\"",
     "prepare": "husky install",
@@ -25,7 +25,8 @@
     "test:lint": "eslint . --ext .js,.jsx",
     "test:unit": "jest test[\\\\/]unit",
     "test:smoke": "jest --runInBand test[\\\\/]smoke",
-    "watch": "webpack --colors --watch"
+    "watch": "webpack --colors --watch",
+    "dev": "BUILD_MODE=dist webpack-dev-server"
   },
   "config": {
     "commitizen": {
@@ -84,6 +85,7 @@
     "react-virtualized": "9.20.1",
     "redux": "3.7.2",
     "redux-throttle": "0.1.1",
+    "regenerator-runtime": "^0.14.0",
     "scratch-audio": "0.1.0-prerelease.20221123180128",
     "scratch-blocks": "0.2.0-prerelease.20230909213745",
     "scratch-l10n": "3.16.20230909032442",
@@ -118,6 +120,7 @@
     "babel-eslint": "10.0.3",
     "babel-loader": "8.2.2",
     "chromedriver": "115.0.0",
+    "cross-fetch": "^4.0.0",
     "enzyme": "3.10.0",
     "enzyme-adapter-react-16": "1.15.7",
     "eslint": "5.16.0",
