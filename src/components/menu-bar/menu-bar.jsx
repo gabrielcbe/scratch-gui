@@ -748,7 +748,7 @@ class MenuBar extends React.Component {
                             // ********* user not logged in, but a session exists
                             // ********* so they can choose to log in
                             <React.Fragment>
-                                <div
+                                {/* <div
                                     className={classNames(
                                         styles.menuBarItem,
                                         styles.hoverable
@@ -761,7 +761,7 @@ class MenuBar extends React.Component {
                                         description="Link for creating a Scratch account"
                                         id="gui.menuBar.joinScratch"
                                     />
-                                </div>
+                                </div> */}
                                 <div
                                     className={classNames(
                                         styles.menuBarItem,
