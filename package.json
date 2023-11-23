@@ -11,7 +11,7 @@
   },
   "main": "./dist/scratch-gui.js",
   "scripts": {
-    "build": "npm run clean && BUILD_MODE=dist webpack --colors --bail",
+    "build": "npm run clean && NODE_OPTIONS=--openssl-legacy-provider BUILD_MODE=dist webpack --colors --bail",
     "clean": "rimraf ./build && mkdirp build && rimraf ./dist && mkdirp dist",
     "deploy": "touch build/.nojekyll && gh-pages -t -d build -m \"[skip ci] Build for $(git log --pretty=format:%H -n1)\"",
     "prepare": "husky install && npm run prepublish && pnpm run i18n:src",
@@ -19,12 +19,13 @@
     "prune": "./prune-gh-pages.sh",
     "i18n:push": "tx-push-src scratch-editor interface translations/en.json",
     "i18n:src": "rimraf ./translations/messages/src && babel src > tmp.js && rimraf tmp.js && build-i18n-src ./translations/messages/src ./translations/",
+    "start": "NODE_OPTIONS=--openssl-legacy-provider webpack-dev-server",
     "test": "npm run test:lint && npm run test:unit && npm run build && npm run test:integration",
     "test:integration": "jest --maxWorkers=4 test[\\\\/]integration",
     "test:lint": "eslint . --ext .js,.jsx",
     "test:unit": "jest test[\\\\/]unit",
     "test:smoke": "jest --runInBand test[\\\\/]smoke",
-    "watch": "webpack --colors --watch",
+    "watch": "NODE_OPTIONS=--openssl-legacy-provider webpack --colors --watch",
     "dev": "BUILD_MODE=dist npm run watch"
   },
   "config": {
