@@ -13,6 +13,7 @@ import {
 } from '../lib/backpack-api';
 import DragConstants from '../lib/drag-constants';
 import DropAreaHOC from '../lib/drop-area-hoc.jsx';
+import getSession from '../lib/get-session.js';
 
 import {connect} from 'react-redux';
 import storage from '../lib/storage';
@@ -243,11 +244,13 @@ Backpack.propTypes = {
 };
 
 const getTokenAndUsername = state => {
+    const session = getSession();
+
     // Look for the session state provided by scratch-www
-    if (state.session && state.session.session && state.session.session.user) {
+    if (session && session.session && session.session.user) {
         return {
-            token: state.session.session.user.token,
-            username: state.session.session.user.username
+            token: session.session.user.token,
+            username: session.session.user.username
         };
     }
     // Otherwise try to pull testing params out of the URL, or return nulls

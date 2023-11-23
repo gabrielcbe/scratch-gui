@@ -10,6 +10,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 
 import AccountNavComponent from '../components/menu-bar/account-nav.jsx';
+import getSession from '../lib/get-session';
 
 const AccountNav = function (props) {
     const {
@@ -32,18 +33,21 @@ AccountNav.propTypes = {
     username: PropTypes.string
 };
 
-const mapStateToProps = state => ({
-    classroomId: state.session && state.session.session && state.session.session.user ?
-        state.session.session.user.classroomId : '',
-    isEducator: state.session && state.session.permissions && state.session.permissions.educator,
-    isStudent: state.session && state.session.permissions && state.session.permissions.student,
-    profileUrl: state.session && state.session.session && state.session.session.user ?
-        `/users/${state.session.session.user.username}` : '',
-    thumbnailUrl: state.session && state.session.session && state.session.session.user ?
-        state.session.session.user.thumbnailUrl : null,
-    username: state.session && state.session.session && state.session.session.user ?
-        state.session.session.user.username : ''
-});
+const mapStateToProps = (state) => {
+    const session = getSession();
+
+    return {
+    classroomId: session && session.session && session.session.user ?
+        session.session.user.classroomId : '',
+    isEducator: session && session.permissions && session.permissions.educator,
+    isStudent: session && session.permissions && session.permissions.student,
+    profileUrl: session && session.session && session.session.user ?
+        `/users/${session.session.user.username}` : '',
+    thumbnailUrl: session && session.session && session.session.user ?
+        session.session.user.thumbnailUrl : null,
+    username: session && session.session && session.session.user ?
+        session.session.user.username : ''
+}};
 
 const mapDispatchToProps = () => ({});
 

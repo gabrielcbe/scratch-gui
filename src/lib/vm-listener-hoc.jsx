@@ -13,6 +13,8 @@ import {setRunningState, setTurboState, setStartedState} from '../reducers/vm-st
 import {showExtensionAlert} from '../reducers/alerts';
 import {updateMicIndicator} from '../reducers/mic-indicator';
 
+import getSession from '../lib/get-session';
+
 /*
  * Higher Order Component to manage events emitted by the VM
  * @param {React.Component} WrappedComponent component to manage VM events for
@@ -168,18 +170,22 @@ const vmListenerHOC = function (WrappedComponent) {
         attachKeyboardEvents: true,
         onGreenFlag: () => ({})
     };
-    const mapStateToProps = state => ({
-        projectChanged: state.scratchGui.projectChanged,
-        // Do not emit target or project updates in fullscreen or player only mode
-        // or when recording sounds (it leads to garbled recordings on low-power machines)
-        shouldUpdateTargets: !state.scratchGui.mode.isFullScreen && !state.scratchGui.mode.isPlayerOnly &&
+    const mapStateToProps = state => {
+        const session = getSession();
+
+        return {
+            projectChanged: state.scratchGui.projectChanged,
+            // Do not emit target or project updates in fullscreen or player only mode
+            // or when recording sounds (it leads to garbled recordings on low-power machines)
+            shouldUpdateTargets: !state.scratchGui.mode.isFullScreen && !state.scratchGui.mode.isPlayerOnly &&
             !state.scratchGui.modals.soundRecorder,
-        // Do not update the projectChanged state in fullscreen or player only mode
-        shouldUpdateProjectChanged: !state.scratchGui.mode.isFullScreen && !state.scratchGui.mode.isPlayerOnly,
-        vm: state.scratchGui.vm,
-        username: state.session && state.session.session && state.session.session.user ?
-            state.session.session.user.username : ''
-    });
+            // Do not update the projectChanged state in fullscreen or player only mode
+            shouldUpdateProjectChanged: !state.scratchGui.mode.isFullScreen && !state.scratchGui.mode.isPlayerOnly,
+            vm: state.scratchGui.vm,
+            username: session && session.session && session.session.user ?
+                session.session.user.username : ''
+        };
+    };
     const mapDispatchToProps = dispatch => ({
         onTargetsUpdate: data => {
             dispatch(updateTargets(data.targetList, data.editingTarget));

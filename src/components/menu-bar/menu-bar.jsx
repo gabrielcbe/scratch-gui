@@ -93,6 +93,8 @@ import oldtimeyLogo from './oldtimey-logo.svg';
 
 import sharedMessages from '../../lib/shared-messages';
 
+import getSession from '../../lib/get-session';
+
 const ariaMessages = defineMessages({
     tutorials: {
         id: 'gui.menuBar.tutorialsLibrary',
@@ -932,7 +934,9 @@ MenuBar.defaultProps = {
 
 const mapStateToProps = (state, ownProps) => {
     const loadingState = state.scratchGui.projectState.loadingState;
-    const user = state.session && state.session.session && state.session.session.user;
+    const session = getSession();
+
+    const user = session && session.session && session.session.user;
     return {
         aboutMenuOpen: aboutMenuOpen(state),
         accountMenuOpen: accountMenuOpen(state),
@@ -946,7 +950,7 @@ const mapStateToProps = (state, ownProps) => {
         loginMenuOpen: loginMenuOpen(state),
         modeMenuOpen: modeMenuOpen(state),
         projectTitle: state.scratchGui.projectTitle,
-        sessionExists: state.session && typeof state.session.session !== 'undefined',
+        sessionExists: session && typeof session.session !== 'undefined',
         settingsMenuOpen: settingsMenuOpen(state),
         username: user ? user.username : null,
         userOwnsProject: ownProps.authorUsername && user &&

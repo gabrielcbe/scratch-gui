@@ -21,6 +21,7 @@ import {
 import {
     closeFileMenu
 } from '../reducers/menus';
+import getSession from './get-session';
 
 const messages = defineMessages({
     loadError: {
@@ -227,8 +228,10 @@ const SBFileUploaderHOC = function (WrappedComponent) {
         })
     };
     const mapStateToProps = (state, ownProps) => {
+        const session = getSession();
+
         const loadingState = state.scratchGui.projectState.loadingState;
-        const user = state.session && state.session.session && state.session.session.user;
+        const user = session && session.session && session.session.user;
         return {
             isLoadingUpload: getIsLoadingUpload(loadingState),
             isShowingWithoutId: getIsShowingWithoutId(loadingState),
