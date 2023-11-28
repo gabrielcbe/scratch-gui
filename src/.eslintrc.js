@@ -20,13 +20,18 @@ module.exports = {
         }]
     },
     settings: {
-        react: {
-            version: '16.2' // Prevent 16.3 lifecycle method errors
-        },
-        'import/resolver': {
+        "import/resolver": {
             webpack: {
-                config: path.resolve(__dirname, '../webpack.config.js')
-            }
-        }
-    }
+                config: path.resolve(__dirname, "../webpack.config.js"),
+            },
+        },
+        "import/no-nodejs-modules": "error",
+        camelcase: [
+            2,
+            {
+                properties: "never", // This is from the base `scratch` config
+                allow: ["^UNSAFE_"], // Allow until migrated to new lifecycle methods
+            },
+        ],
+    },
 };
