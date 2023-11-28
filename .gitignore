@@ -26,3 +26,6 @@ npm-*
 
 # turbo
 .turbo
+
+# for act
+.secrets
