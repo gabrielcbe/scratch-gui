@@ -11,7 +11,7 @@
   },
   "main": "./dist/scratch-gui.js",
   "scripts": {
-    "build": "npm run clean && NODE_OPTIONS=--openssl-legacy-provider BUILD_MODE=dist webpack --colors --bail",
+    "build": "npm run clean && BUILD_MODE=dist webpack --colors --bail",
     "clean": "rimraf ./build && mkdirp build && rimraf ./dist && mkdirp dist",
     "deploy": "touch build/.nojekyll && gh-pages -t -d build -m \"[skip ci] Build for $(git log --pretty=format:%H -n1)\"",
     "prepare": "husky install && npm run prepublish && pnpm run i18n:src",
@@ -25,7 +25,7 @@
     "test:lint": "eslint . --ext .js,.jsx",
     "test:unit": "jest test[\\\\/]unit",
     "test:smoke": "jest --runInBand test[\\\\/]smoke",
-    "watch": "NODE_OPTIONS=--openssl-legacy-provider webpack --colors --watch",
+    "watch": "webpack --colors --watch",
     "dev": "BUILD_MODE=dist npm run watch"
   },
   "config": {
@@ -69,9 +69,9 @@
     "prop-types": "^15.5.10",
     "query-string": "^5.1.1",
     "raw-loader": "^0.5.1",
-    "react": "17.0.2",
+    "react": "^17.0.2",
     "react-contextmenu": "2.14.0",
-    "react-dom": "17.0.2",
+    "react-dom": "^17.0.2",
     "react-draggable": "3.0.5",
     "react-ga": "2.5.3",
     "react-intl": "2.9.0",
