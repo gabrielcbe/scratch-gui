@@ -1,11 +1,139 @@
 [
     {
-        "name": "Abby",
-        "tags": [
-            "people",
-            "person",
-            "drawing"
+        "name": "Robogode Voando",
+        "tags": ["mindmakers"],
+        "isStage": false,
+        "variables": {},
+        "costumes": [
+            {
+                "name": "robogode-voando-a",
+                "assetId": "10000000000000000000000000a00000",
+                "bitmapResolution": 1,
+                "dataFormat": "svg",
+                "md5ext": "10000000000000000000000000a00000.svg",
+                "rotationCenterX": 59,
+                "rotationCenterY": 36
+            },
+            {
+                "name": "robogode-voando-b",
+                "assetId": "10000000000000000000000000a00001",
+                "bitmapResolution": 1,
+                "dataFormat": "svg",
+                "md5ext": "10000000000000000000000000a00001.svg",
+                "rotationCenterX": 46,
+                "rotationCenterY": 54
+            }
         ],
+        "sounds": [
+            {
+                "assetId": "1000000000000000000000f000000001",
+                "name": "Hello",
+                "dataFormat": "wav",
+                "format": "",
+                "rate": 44100,
+                "sampleCount": 37376,
+                "md5ext": "1000000000000000000000f000000001.wav"
+            }
+        ],
+        "blocks": {}
+    },
+    {
+        "name": "Robogode",
+        "tags": ["mindmakers"],
+        "isStage": false,
+        "variables": {},
+        "costumes": [
+            {
+                "name": "Robogode-a",
+                "assetId": "10000000000000000000000000000000",
+                "bitmapResolution": 1,
+                "dataFormat": "svg",
+                "md5ext": "10000000000000000000000000000000.svg",
+                "rotationCenterX": 43,
+                "rotationCenterY": 67
+            },
+            {
+                "name": "robogode-b",
+                "assetId": "10000000000000000000000000000001",
+                "bitmapResolution": 1,
+                "dataFormat": "svg",
+                "md5ext": "10000000000000000000000000000001.svg",
+                "rotationCenterX": 43,
+                "rotationCenterY": 67
+            },
+            {
+                "name": "robogode-c",
+                "assetId": "10000000000000000000000000000002",
+                "bitmapResolution": 1,
+                "dataFormat": "svg",
+                "md5ext": "10000000000000000000000000000002.svg",
+                "rotationCenterX": 43,
+                "rotationCenterY": 67
+            }
+        ],
+        "sounds": [
+            {
+                "assetId": "1000000000000000000000f000000001",
+                "name": "Hello",
+                "dataFormat": "wav",
+                "format": "",
+                "rate": 44100,
+                "sampleCount": 37376,
+                "md5ext": "1000000000000000000000f000000001.wav"
+            }
+        ],
+        "blocks": {}
+    },
+    {
+        "name": "Robolady",
+        "tags": ["mindmakers"],
+        "isStage": false,
+        "variables": {},
+        "costumes": [
+            {
+                "name": "Robolady-a",
+                "assetId": "10000000000000000000000000000003",
+                "bitmapResolution": 1,
+                "dataFormat": "svg",
+                "md5ext": "10000000000000000000000000000003.svg",
+                "rotationCenterX": 46,
+                "rotationCenterY": 62
+            },
+            {
+                "name": "Robolady-b",
+                "assetId": "10000000000000000000000000000004",
+                "bitmapResolution": 1,
+                "dataFormat": "svg",
+                "md5ext": "10000000000000000000000000000004.svg",
+                "rotationCenterX": 45,
+                "rotationCenterY": 64
+            },
+            {
+                "name": "Robolady-c",
+                "assetId": "10000000000000000000000000000005",
+                "bitmapResolution": 1,
+                "dataFormat": "svg",
+                "md5ext": "10000000000000000000000000000005.svg",
+                "rotationCenterX": 34,
+                "rotationCenterY": 60
+            }
+        ],
+        "sounds": [
+            {
+                "assetId": "1000000000000000000000f000000001",
+                "name": "Hello",
+                "dataFormat": "wav",
+                "format": "",
+                "rate": 44100,
+                "sampleCount": 37376,
+                "md5ext": "1000000000000000000000f000000001.wav"
+            }
+        ],
+        "blocks": {}
+    },
+    {
+        "name": "Abby",
+        "tags": ["people", "person", "drawing"],
         "isStage": false,
         "variables": {},
         "costumes": [

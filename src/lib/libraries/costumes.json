@@ -1,5 +1,85 @@
 [
     {
+        "name": "Robogode-voando-a",
+        "tags": ["mindmakers"],
+        "assetId": "10000000000000000000000000a00000",
+        "bitmapResolution": 1,
+        "dataFormat": "svg",
+        "md5ext": "10000000000000000000000000a00000.svg",
+        "rotationCenterX": 59,
+        "rotationCenterY": 36
+    },
+    {
+        "name": "Robogode-voando-b",
+        "tags": ["mindmakers"],
+        "assetId": "10000000000000000000000000a00001",
+        "bitmapResolution": 1,
+        "dataFormat": "svg",
+        "md5ext": "10000000000000000000000000a00001.svg",
+        "rotationCenterX": 46,
+        "rotationCenterY": 54
+    },
+    {
+        "name": "Robogode-a",
+        "tags": ["mindmakers"],
+        "assetId": "10000000000000000000000000000000",
+        "bitmapResolution": 1,
+        "dataFormat": "svg",
+        "md5ext": "10000000000000000000000000000000.svg",
+        "rotationCenterX": 43,
+        "rotationCenterY": 67
+    },
+    {
+        "name": "Robogode-b",
+        "tags": ["mindmakers"],
+        "assetId": "10000000000000000000000000000001",
+        "bitmapResolution": 1,
+        "dataFormat": "svg",
+        "md5ext": "10000000000000000000000000000001.svg",
+        "rotationCenterX": 43,
+        "rotationCenterY": 67
+    },
+    {
+        "name": "Robogode-c",
+        "tags": ["mindmakers"],
+        "assetId": "10000000000000000000000000000002",
+        "bitmapResolution": 1,
+        "dataFormat": "svg",
+        "md5ext": "10000000000000000000000000000002.svg",
+        "rotationCenterX": 43,
+        "rotationCenterY": 67
+    },
+    {
+        "name": "Robolady-a",
+        "tags": ["mindmakers"],
+        "assetId": "10000000000000000000000000000003",
+        "bitmapResolution": 1,
+        "dataFormat": "svg",
+        "md5ext": "10000000000000000000000000000003.svg",
+        "rotationCenterX": 46,
+        "rotationCenterY": 64
+    },
+    {
+        "name": "Robolady-b",
+        "tags": ["mindmakers"],
+        "assetId": "10000000000000000000000000000004",
+        "bitmapResolution": 1,
+        "dataFormat": "svg",
+        "md5ext": "10000000000000000000000000000004.svg",
+        "rotationCenterX": 46,
+        "rotationCenterY": 64
+    },
+    {
+        "name": "Robolady-c",
+        "tags": ["mindmakers"],
+        "assetId": "10000000000000000000000000000005",
+        "bitmapResolution": 1,
+        "dataFormat": "svg",
+        "md5ext": "10000000000000000000000000000005.svg",
+        "rotationCenterX": 34,
+        "rotationCenterY": 60
+    },
+    {
         "name": "Abby-a",
         "tags": [
             "people",
