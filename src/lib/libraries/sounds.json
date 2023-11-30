@@ -1,4 +1,12 @@
-[
+[   {
+        "name": "Hello",
+        "tags": ["mindmakers"],
+        "assetId": "1000000000000000000000f000000001",
+        "dataFormat": "",
+        "md5ext": "1000000000000000000000f000000001.wav",
+        "sampleCount": 37376,
+        "rate": 44100
+    },
     {
         "name": "A Bass",
         "tags": [
