@@ -117,12 +117,13 @@ const StageComponent = props => {
                         width={0}
                     />
                 </Box>
-                {isStarted ? null : (
+                {/* TODO - remove comment when overlay bug is fixed */}
+                {/* {isStarted ? null : (
                     <GreenFlagOverlay
                         className={styles.greenFlagOverlay}
                         wrapperClass={styles.greenFlagOverlayWrapper}
                     />
-                )}
+                )} */}
             </Box>
             {isColorPicking ? (
                 <Box
