@@ -30,7 +30,8 @@ const AccountNavComponent = ({
     onLogOut,
     profileUrl,
     thumbnailUrl,
-    username
+    username,
+    currentClass
 }) => (
     <React.Fragment>
         <div
@@ -40,21 +41,26 @@ const AccountNavComponent = ({
             )}
             onMouseUp={onClick}
         >
-            {thumbnailUrl ? (
-                <UserAvatar
-                    className={styles.avatar}
-                    imageUrl={thumbnailUrl}
-                />
-            ) : null}
-            <span className={styles.profileName}>
-                {username}
-            </span>
+            <div className={styles.nameContainer}>
+                <span className={styles.profileName}>
+                    {username}
+                </span>
+                {currentClass ? <span className={styles.studentLevel}>
+                    {currentClass}
+                </span> : null}
+            </div>
             <div className={styles.dropdownCaretPosition}>
                 <img
                     className={styles.dropdownCaretIcon}
                     src={dropdownCaret}
                 />
             </div>
+            {thumbnailUrl ? (
+                <UserAvatar
+                    className={styles.avatar}
+                    imageUrl={thumbnailUrl}
+                />
+            ) : null}
         </div>
         <MenuBarMenu
             className={menuBarMenuClassName}
@@ -130,7 +136,8 @@ AccountNavComponent.propTypes = {
     onLogOut: PropTypes.func,
     profileUrl: PropTypes.string,
     thumbnailUrl: PropTypes.string,
-    username: PropTypes.string
+    username: PropTypes.string,
+    currentClass: PropTypes.string
 };
 
 export default AccountNavComponent;
