@@ -80,6 +80,66 @@
         "rotationCenterY": 60
     },
     {
+        "name": "CsBot1-a",
+        "tags": ["mindmakers"],
+        "assetId": "92da015ba3225999d363a892e85d8fa0",
+        "bitmapResolution": 1,
+        "dataFormat": "svg",
+        "md5ext": "92da015ba3225999d363a892e85d8fa0.svg",
+        "rotationCenterX": 34,
+        "rotationCenterY": 60
+    },
+    {
+        "name": "CsBot1-b",
+        "tags": ["mindmakers"],
+        "assetId": "6305ec5709607f995c5ed089c41a6358",
+        "bitmapResolution": 1,
+        "dataFormat": "svg",
+        "md5ext": "6305ec5709607f995c5ed089c41a6358.svg",
+        "rotationCenterX": 34,
+        "rotationCenterY": 60
+    },
+    {
+        "name": "CsBot1-c",
+        "tags": ["mindmakers"],
+        "assetId": "a53c12a2aae8551ad7bd27b80579b10b",
+        "bitmapResolution": 1,
+        "dataFormat": "svg",
+        "md5ext": "a53c12a2aae8551ad7bd27b80579b10b.svg",
+        "rotationCenterX": 34,
+        "rotationCenterY": 60
+    },
+    {
+        "name": "CsBot2-a",
+        "tags": ["mindmakers"],
+        "assetId": "22769f7899ec607ac8a43d0e42e69db5",
+        "bitmapResolution": 1,
+        "dataFormat": "svg",
+        "md5ext": "22769f7899ec607ac8a43d0e42e69db5.svg",
+        "rotationCenterX": 34,
+        "rotationCenterY": 60
+    },
+    {
+        "name": "CsBot2-b",
+        "tags": ["mindmakers"],
+        "assetId": "254017b5a8206d77c02f1ec616ac20ba",
+        "bitmapResolution": 1,
+        "dataFormat": "svg",
+        "md5ext": "254017b5a8206d77c02f1ec616ac20ba.svg",
+        "rotationCenterX": 34,
+        "rotationCenterY": 60
+    },
+    {
+        "name": "CsBot2-c",
+        "tags": ["mindmakers"],
+        "assetId": "75b9a6c60d1bfaf3074f4f13d4f2aa8a",
+        "bitmapResolution": 1,
+        "dataFormat": "svg",
+        "md5ext": "75b9a6c60d1bfaf3074f4f13d4f2aa8a.svg",
+        "rotationCenterX": 34,
+        "rotationCenterY": 60
+    },
+    {
         "name": "Abby-a",
         "tags": [
             "people",
