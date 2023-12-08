@@ -7,19 +7,19 @@
         "costumes": [
             {
                 "name": "robogode-voando-a",
-                "assetId": "10000000000000000000000000a00000",
+                "assetId": "4665b62c89f43878d7c5026a70de41ea",
                 "bitmapResolution": 1,
                 "dataFormat": "svg",
-                "md5ext": "10000000000000000000000000a00000.svg",
+                "md5ext": "4665b62c89f43878d7c5026a70de41ea.svg",
                 "rotationCenterX": 59,
                 "rotationCenterY": 36
             },
             {
                 "name": "robogode-voando-b",
-                "assetId": "10000000000000000000000000a00001",
+                "assetId": "43f6c25a5b140fd3e906094aa83d744d",
                 "bitmapResolution": 1,
                 "dataFormat": "svg",
-                "md5ext": "10000000000000000000000000a00001.svg",
+                "md5ext": "43f6c25a5b140fd3e906094aa83d744d.svg",
                 "rotationCenterX": 46,
                 "rotationCenterY": 54
             }
@@ -45,28 +45,28 @@
         "costumes": [
             {
                 "name": "Robogode-a",
-                "assetId": "10000000000000000000000000000000",
+                "assetId": "7a0a4977e05222226bd1bb6ffb7a47cb",
                 "bitmapResolution": 1,
                 "dataFormat": "svg",
-                "md5ext": "10000000000000000000000000000000.svg",
+                "md5ext": "7a0a4977e05222226bd1bb6ffb7a47cb.svg",
                 "rotationCenterX": 43,
                 "rotationCenterY": 67
             },
             {
                 "name": "robogode-b",
-                "assetId": "10000000000000000000000000000001",
+                "assetId": "0211cbec30421e78d02daf3fe3aa3c3c",
                 "bitmapResolution": 1,
                 "dataFormat": "svg",
-                "md5ext": "10000000000000000000000000000001.svg",
+                "md5ext": "0211cbec30421e78d02daf3fe3aa3c3c.svg",
                 "rotationCenterX": 43,
                 "rotationCenterY": 67
             },
             {
                 "name": "robogode-c",
-                "assetId": "10000000000000000000000000000002",
+                "assetId": "9fc052486ae26777676baa0330b81acb",
                 "bitmapResolution": 1,
                 "dataFormat": "svg",
-                "md5ext": "10000000000000000000000000000002.svg",
+                "md5ext": "9fc052486ae26777676baa0330b81acb.svg",
                 "rotationCenterX": 43,
                 "rotationCenterY": 67
             }
@@ -92,28 +92,28 @@
         "costumes": [
             {
                 "name": "Robolady-a",
-                "assetId": "10000000000000000000000000000003",
+                "assetId": "c5b8b70bd1922557b7a2b9badbdc2d6b",
                 "bitmapResolution": 1,
                 "dataFormat": "svg",
-                "md5ext": "10000000000000000000000000000003.svg",
+                "md5ext": "c5b8b70bd1922557b7a2b9badbdc2d6b.svg",
                 "rotationCenterX": 46,
                 "rotationCenterY": 62
             },
             {
                 "name": "Robolady-b",
-                "assetId": "10000000000000000000000000000004",
+                "assetId": "663334dbe0fab5737a2a370b535fb11e",
                 "bitmapResolution": 1,
                 "dataFormat": "svg",
-                "md5ext": "10000000000000000000000000000004.svg",
+                "md5ext": "663334dbe0fab5737a2a370b535fb11e.svg",
                 "rotationCenterX": 45,
                 "rotationCenterY": 64
             },
             {
                 "name": "Robolady-c",
-                "assetId": "10000000000000000000000000000005",
+                "assetId": "9ba20497475e1d680c492653626377bf",
                 "bitmapResolution": 1,
                 "dataFormat": "svg",
-                "md5ext": "10000000000000000000000000000005.svg",
+                "md5ext": "9ba20497475e1d680c492653626377bf.svg",
                 "rotationCenterX": 34,
                 "rotationCenterY": 60
             }
