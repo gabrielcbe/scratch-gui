@@ -1,12 +1,18 @@
 const getSession = () => {
     if (typeof window !== "undefined") {
-        let session = localStorage.getItem("scratchSession");
+        const persistedSession = localStorage.getItem("persist:session");
 
-        if (session) {
-            session = JSON.parse(session);
+        try{
+            if (persistedSession) {
+                const session = JSON.parse(persistedSession);
+                const newParse = JSON.parse(session.session);
+
+                return {session: newParse, permissions: newParse?.permissions};
+            }
+        }catch(e){
+            console.log('getSession error', { e });
         }
 
-        return session;
     }
     return null;
 };
