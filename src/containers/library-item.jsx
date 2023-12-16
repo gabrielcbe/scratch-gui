@@ -109,14 +109,16 @@ class LibraryItem extends React.PureComponent {
         // TODO - add a proxy for the cdn
         // const donwloadURl = process.env.NODE_ENV !== 'production' ? 'https://storage.googleapis.com/mmscratch' : '';
 
-        // const iconURL = iconMd5 ?
-        //     `${donwloadURl}/asset/${iconMd5}` :
-        //     this.props.iconRawURL;
+        const donwloadURl = 'https://storage.googleapis.com/mmscratch';
+
+        const iconURL = iconMd5 ?
+            `${donwloadURl}/asset/${iconMd5}` :
+            this.props.iconRawURL;
 
         // Test reference public asset folder
-        const iconURL = iconMd5 ?
-            `/asset/${iconMd5}` :
-            this.props.iconRawURL;
+        // const iconURL = iconMd5 ?
+        //     `/asset/${iconMd5}` :
+        //     this.props.iconRawURL;
         return (
             <LibraryItemComponent
                 bluetoothRequired={this.props.bluetoothRequired}
