@@ -70,13 +70,24 @@ const AppStateHOC = function (WrappedComponent, localesOnly, sessionReducer, ses
                     locales: localesReducer,
                     scratchGui: guiReducer,
                     scratchPaint: ScratchPaintReducer,
-                    session: sessionReducer
                 };
+                // if(sessionReducer && sessionReducer !== undefined){
+                //     reducers = {
+                //         ...reducers,
+                //         session: sessionReducer
+                //     };
+                // }
                 initialState = {
                     locales: initializedLocales,
                     scratchGui: initializedGui,
                     session: sessionInitlaState
                 };
+                // if(sessionInitlaState && sessionInitlaState !== undefined){
+                //     initialState = {
+                //         ...initialState,
+                //         session: sessionInitlaState
+                //     };
+                // }
                 enhancer = composeEnhancers(guiMiddleware);
             }
             const reducer = combineReducers(reducers);

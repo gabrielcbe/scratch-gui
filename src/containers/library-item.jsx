@@ -107,10 +107,10 @@ class LibraryItem extends React.PureComponent {
         const iconMd5 = this.curIconMd5();
 
         // TODO - add a proxy for the cdn
-        // const donwloadURl = process.env.NODE_ENV === 'production' ? 'https://cdn.assets.scratch.mit.edu' : '/api/proxy/assets/cdn';
+        // const donwloadURl = process.env.NODE_ENV !== 'production' ? 'https://storage.googleapis.com/mmscratch' : '';
 
         // const iconURL = iconMd5 ?
-        //     `${donwloadURl}/internalapi/asset/${iconMd5}/get/` :
+        //     `${donwloadURl}/asset/${iconMd5}` :
         //     this.props.iconRawURL;
 
         // Test reference public asset folder
