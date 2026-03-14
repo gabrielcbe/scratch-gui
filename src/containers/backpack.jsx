@@ -243,7 +243,7 @@ Backpack.propTypes = {
     vm: PropTypes.instanceOf(VM)
 };
 
-const getTokenAndUsername = state => {
+const getTokenAndUsername = () => {
     const session = getSession();
 
     // Look for the session state provided by scratch-www

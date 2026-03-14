@@ -19,16 +19,12 @@ import styles from './account-nav.css';
 
 const AccountNavComponent = ({
     className,
-    classroomId,
-    isEducator,
     isOpen,
     isRtl,
-    isStudent,
     menuBarMenuClassName,
     onClick,
     onClose,
     onLogOut,
-    profileUrl,
     thumbnailUrl,
     username,
     currentClass
@@ -125,16 +121,12 @@ const AccountNavComponent = ({
 
 AccountNavComponent.propTypes = {
     className: PropTypes.string,
-    classroomId: PropTypes.string,
-    isEducator: PropTypes.bool,
     isOpen: PropTypes.bool,
     isRtl: PropTypes.bool,
-    isStudent: PropTypes.bool,
     menuBarMenuClassName: PropTypes.string,
     onClick: PropTypes.func,
     onClose: PropTypes.func,
     onLogOut: PropTypes.func,
-    profileUrl: PropTypes.string,
     thumbnailUrl: PropTypes.string,
     username: PropTypes.string,
     currentClass: PropTypes.string
