@@ -69,7 +69,7 @@ const AppStateHOC = function (WrappedComponent, localesOnly, sessionReducer, ses
                 reducers = {
                     locales: localesReducer,
                     scratchGui: guiReducer,
-                    scratchPaint: ScratchPaintReducer,
+                    scratchPaint: ScratchPaintReducer
                 };
                 // if(sessionReducer && sessionReducer !== undefined){
                 //     reducers = {

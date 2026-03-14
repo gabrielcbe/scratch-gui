@@ -34,23 +34,24 @@ AccountNav.propTypes = {
     currentClass: PropTypes.string
 };
 
-const mapStateToProps = (state) => {
+const mapStateToProps = () => {
     const session = getSession();
 
     return {
-    classroomId: session && session.session && session.session.user ?
-        session.session.user.classroomId : '',
-    isEducator: session && session.permissions && session.permissions.educator,
-    isStudent: session && session.permissions && session.permissions.student,
-    profileUrl: session && session.session && session.session.user ?
-        `/users/${session.session.user.username}` : '',
-    thumbnailUrl: session && session.session && session.session.user ?
-        session.session.user.thumbnailUrl : null,
-    username: session && session.session && session.session.user && session.session.user.name ?
-        session.session.user.name : session.session.user.username ? session.session.user.username : '',
-    currentClass: session && session.session && session.session.user ?
-        session.session.user.currentClass : ''
-}};
+        classroomId: session && session.session && session.session.user ?
+            session.session.user.classroomId : '',
+        isEducator: session && session.permissions && session.permissions.educator,
+        isStudent: session && session.permissions && session.permissions.student,
+        profileUrl: session && session.session && session.session.user ?
+            `/users/${session.session.user.username}` : '',
+        thumbnailUrl: session && session.session && session.session.user ?
+            session.session.user.thumbnailUrl : null,
+        username: session && session.session && session.session.user && session.session.user.name ?
+            session.session.user.name : session.session.user.username ? session.session.user.username : '',
+        currentClass: session && session.session && session.session.user ?
+            session.session.user.currentClass : ''
+    };
+};
 
 const mapDispatchToProps = () => ({});
 
